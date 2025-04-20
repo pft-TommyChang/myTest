@@ -1,0 +1,15 @@
+name: On Push Handling
+
+on:
+  push:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  call-shared-workflow:
+    uses: pft-TommyChang/Sirius-Release/.github/workflows/issue_commit_reuseable.yml@main
+    secrets: inherit
