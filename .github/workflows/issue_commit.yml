@@ -13,5 +13,9 @@ jobs:
   call-shared-workflow:
     uses: pft-TommyChang/Sirius-Release/.github/workflows/issue_commit_reuseable.yml@main
     secrets: inherit
+    # Fallback assignee (GitHub username, including @).
+    # This will be used when no auditors are mentioned in the commit message.
+    # If fallback is empty, the commit author will be assigned instead.
+    # Typically, this should be set to the PL or module owner.
     with:
-      fallback: pft-TommyChang
+      fallback: @pft-TommyChang
