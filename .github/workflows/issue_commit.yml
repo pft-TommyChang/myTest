@@ -11,5 +11,5 @@ permissions:
 
 jobs:
   call-shared-workflow:
-    uses: pft-TommyChang/Sirius-Release/issue_commit_reuseable.yml@main
+    uses: pft-TommyChang/Sirius-Release/.github/workflows/issue_commit_reuseable.yml@main
     secrets: inherit
